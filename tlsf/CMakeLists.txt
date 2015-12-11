@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 2.8.3)
 
 project(tlsf)
 
+if(WIN32 OR APPLE)
+  message(STATUS "tlsf allocator does not target Windows or OSX, skipping...")
+  return()
+endif()
+
 find_package(ament_cmake REQUIRED)
 
 include_directories(include/tlsf)

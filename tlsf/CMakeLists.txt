@@ -14,7 +14,7 @@ add_library(${PROJECT_NAME} STATIC src/tlsf.c src/target.h include/tlsf/tlsf.h)
 
 set_target_properties(${PROJECT_NAME}
   PROPERTIES
-    COMPILE_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden"
+    COMPILE_FLAGS "-fvisibility=hidden"
 )
 
 ament_export_include_directories(include)

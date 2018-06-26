@@ -4,7 +4,8 @@
   <name>tlsf</name>
   <version>0.4.0</version>
   <description>TLSF allocator version 2.4.6</description>
-  <maintainer email="jackie@osrfoundation.org">Jackie Kay</maintainer>
+  <author email="jackie@osrfoundation.org">Jackie Kay</author>
+  <maintainer email="clalancette@openrobotics.org">Chris Lalancette</maintainer>
   <license>GNU Lesser Public License 2.1</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

@@ -2,7 +2,7 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.4.1 (2018-06-26)
+0.5.0 (2018-06-26)
 ------------------
 * Change maintainer to me.
   Signed-off-by: Chris Lalancette <clalancette@openrobotics.org>

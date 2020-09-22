@@ -588,6 +588,7 @@ size_t add_new_area(void *area, size_t area_size, void *mem_pool)
 size_t get_used_size(void *mem_pool)
 {
 /******************************************************************/
+    (void) mem_pool;
 #if TLSF_STATISTIC
     return ((tlsf_t *) mem_pool)->used_size;
 #else
@@ -599,6 +600,7 @@ size_t get_used_size(void *mem_pool)
 size_t get_max_size(void *mem_pool)
 {
 /******************************************************************/
+    (void) mem_pool;
 #if TLSF_STATISTIC
     return ((tlsf_t *) mem_pool)->max_size;
 #else

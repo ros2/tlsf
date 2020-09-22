@@ -174,14 +174,14 @@ extern "C"
 
 #ifdef USE_PRINTF
 #include <stdio.h>
-# define PRINT_MSG(fmt, args...) printf(fmt, ## args)
-# define ERROR_MSG(fmt, args...) printf(fmt, ## args)
+# define PRINT_MSG(fmt, ...) printf(fmt, ## __VA_ARGS__)
+# define ERROR_MSG(fmt, ...) printf(fmt, ## __VA_ARGS__)
 #else
 # if !defined(PRINT_MSG)
-#  define PRINT_MSG(fmt, args...)
+#  define PRINT_MSG(fmt, ...)
 # endif
 # if !defined(ERROR_MSG)
-#  define ERROR_MSG(fmt, args...)
+#  define ERROR_MSG(fmt, ...)
 # endif
 #endif
 
@@ -347,14 +347,14 @@ static __inline__ void MAPPING_INSERT(size_t _r, int *_fl, int *_sl)
 
 static __inline__ bhdr_t *FIND_SUITABLE_BLOCK(tlsf_t * _tlsf, int *_fl, int *_sl)
 {
-    u32_t _tmp = _tlsf->sl_bitmap[*_fl] & (~0 << *_sl);
+    u32_t _tmp = _tlsf->sl_bitmap[*_fl] & (~0u << *_sl);
     bhdr_t *_b = NULL;
 
     if (_tmp) {
         *_sl = ls_bit(_tmp);
         _b = _tlsf->matrix[*_fl][*_sl];
     } else {
-        *_fl = ls_bit(_tlsf->fl_bitmap & (~0 << (*_fl + 1)));
+        *_fl = ls_bit(_tlsf->fl_bitmap & (~0u << (*_fl + 1)));
         if (*_fl > 0) {         /* likely */
             *_sl = ls_bit(_tlsf->sl_bitmap[*_fl]);
             _b = _tlsf->matrix[*_fl][*_sl];
@@ -588,6 +588,7 @@ size_t add_new_area(void *area, size_t area_size, void *mem_pool)
 size_t get_used_size(void *mem_pool)
 {
 /******************************************************************/
+    (void) mem_pool;
 #if TLSF_STATISTIC
     return ((tlsf_t *) mem_pool)->used_size;
 #else
@@ -599,6 +600,7 @@ size_t get_used_size(void *mem_pool)
 size_t get_max_size(void *mem_pool)
 {
 /******************************************************************/
+    (void) mem_pool;
 #if TLSF_STATISTIC
     return ((tlsf_t *) mem_pool)->max_size;
 #else

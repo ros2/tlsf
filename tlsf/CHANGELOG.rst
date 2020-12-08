@@ -2,6 +2,11 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Enable basic warnings (`#8 <https://github.com/ros2/tlsf/issues/8>`_)
+* Contributors: Audrow Nash
+
 0.5.0 (2018-06-26)
 ------------------
 * Change maintainer to me.

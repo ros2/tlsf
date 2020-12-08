@@ -2,8 +2,8 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.1 (2020-12-08)
+------------------
 * Enable basic warnings (`#8 <https://github.com/ros2/tlsf/issues/8>`_)
 * Contributors: Audrow Nash
 

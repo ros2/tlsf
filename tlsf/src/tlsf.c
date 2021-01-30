@@ -174,8 +174,8 @@ extern "C"
 
 #ifdef USE_PRINTF
 #include <stdio.h>
-# define PRINT_MSG(fmt, ...) printf(fmt, ## __VA_ARGS__)
-# define ERROR_MSG(fmt, ...) printf(fmt, ## __VA_ARGS__)
+# define PRINT_MSG(...) printf(__VA_ARGS__)
+# define ERROR_MSG(...) printf(__VA_ARGS__)
 #else
 # if !defined(PRINT_MSG)
 #  define PRINT_MSG(fmt, ...)

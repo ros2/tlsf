@@ -2,6 +2,11 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Switch to standard __VA_ARGS_\_. (`#9 <https://github.com/ros2/tlsf/issues/9>`_)
+* Contributors: Chris Lalancette
+
 0.5.1 (2020-12-08)
 ------------------
 * Enable basic warnings (`#8 <https://github.com/ros2/tlsf/issues/8>`_)

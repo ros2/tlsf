@@ -2,8 +2,8 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.2 (2021-03-18)
+------------------
 * Switch to standard __VA_ARGS_\_. (`#9 <https://github.com/ros2/tlsf/issues/9>`_)
 * Contributors: Chris Lalancette
 

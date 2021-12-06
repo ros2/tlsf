@@ -17,16 +17,13 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 
-include_directories(include/tlsf)
 add_library(${PROJECT_NAME} STATIC src/tlsf.c src/target.h include/tlsf/tlsf.h)
+target_include_directories(${PROJECT_NAME} PUBLIC
+  "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include/tlsf>"
+  "$<INSTALL_INTERFACE:include>")
+set_target_properties(${PROJECT_NAME} PROPERTIES C_VISIBILITY_PRESET hidden)
 
-set_target_properties(${PROJECT_NAME}
-  PROPERTIES
-    COMPILE_FLAGS "-fvisibility=hidden"
-)
-
-ament_export_include_directories(include)
-ament_export_libraries(${PROJECT_NAME})
+ament_export_targets(export_${PROJECT_NAME})
 
 # Disable linting for now.
 #if(BUILD_TESTING)
@@ -42,6 +39,7 @@ install(DIRECTORY include/
 
 install(
   TARGETS ${PROJECT_NAME}
+  EXPORT export_${PROJECT_NAME}
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin

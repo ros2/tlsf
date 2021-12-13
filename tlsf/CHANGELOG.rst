@@ -2,8 +2,8 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.6.0 (2021-12-13)
+------------------
 * Export a modern CMake target instead of old-style variables (`#10 <https://github.com/ros2/tlsf/issues/10>`_)
 * Contributors: Shane Loretz
 

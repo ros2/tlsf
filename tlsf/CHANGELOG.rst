@@ -2,6 +2,11 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Export a modern CMake target instead of old-style variables (`#10 <https://github.com/ros2/tlsf/issues/10>`_)
+* Contributors: Shane Loretz
+
 0.5.2 (2021-03-18)
 ------------------
 * Switch to standard __VA_ARGS_\_. (`#9 <https://github.com/ros2/tlsf/issues/9>`_)

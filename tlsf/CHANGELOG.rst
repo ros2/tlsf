@@ -2,8 +2,8 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.7.0 (2022-03-01)
+------------------
 * Install headers to include/${PROJECT_NAME} (`#11 <https://github.com/ros2/tlsf/issues/11>`_)
 * Contributors: Shane Loretz
 

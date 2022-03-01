@@ -2,6 +2,11 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Install headers to include/${PROJECT_NAME} (`#11 <https://github.com/ros2/tlsf/issues/11>`_)
+* Contributors: Shane Loretz
+
 0.6.0 (2021-12-13)
 ------------------
 * Export a modern CMake target instead of old-style variables (`#10 <https://github.com/ros2/tlsf/issues/10>`_)

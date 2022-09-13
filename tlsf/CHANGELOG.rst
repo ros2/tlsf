@@ -2,6 +2,11 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update maintainers (`#12 <https://github.com/ros2/tlsf/issues/12>`_)
+* Contributors: methylDragon
+
 0.8.0 (2022-05-04)
 ------------------
 

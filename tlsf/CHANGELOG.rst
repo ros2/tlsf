@@ -2,6 +2,11 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* [rolling] Update maintainers - 2022-11-07 (`#13 <https://github.com/ros2/tlsf/issues/13>`_)
+* Contributors: Audrow Nash
+
 0.8.1 (2022-09-13)
 ------------------
 * Update maintainers (`#12 <https://github.com/ros2/tlsf/issues/12>`_)

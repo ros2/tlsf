@@ -2,8 +2,8 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.10.1 (2024-10-03)
+-------------------
 * Fixed link (`#15 <https://github.com/ros2/tlsf/issues/15>`_)
 * Contributors: Alejandro Hernández Cordero
 

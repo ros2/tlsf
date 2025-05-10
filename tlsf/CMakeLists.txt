@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(tlsf)
 
@@ -9,7 +9,7 @@ endif()
 
 # Default to C11
 if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 11)
+  set(CMAKE_C_STANDARD 17)
 endif()
 if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)

@@ -9,7 +9,7 @@ endif()
 
 # Default to C11
 if(NOT CMAKE_C_STANDARD)
-  set(CMAKE_C_STANDARD 17)
+  set(CMAKE_C_STANDARD 11)
 endif()
 if(CMAKE_COMPILER_IS_GNUCC OR CMAKE_C_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)

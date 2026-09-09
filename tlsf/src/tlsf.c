@@ -168,20 +168,20 @@ extern "C"
 
 #define DEFAULT_AREA_SIZE (1024*10)
 
-#ifdef USE_MMAP
+#if USE_MMAP
 #define PAGE_SIZE (getpagesize())
 #endif
 
-#ifdef USE_PRINTF
+#if USE_PRINTF
 #include <stdio.h>
 # define PRINT_MSG(...) printf(__VA_ARGS__)
 # define ERROR_MSG(...) printf(__VA_ARGS__)
 #else
 # if !defined(PRINT_MSG)
-#  define PRINT_MSG(fmt, ...)
+#  define PRINT_MSG(...) ((void)0)
 # endif
 # if !defined(ERROR_MSG)
-#  define ERROR_MSG(fmt, ...)
+#  define ERROR_MSG(...) ((void)0)
 # endif
 #endif
 

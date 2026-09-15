@@ -2,6 +2,11 @@
 Changelog for package tlsf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.12.1 (2026-09-15)
+-------------------
+* Include what you use (`#20 <https://github.com/ros2/tlsf/issues/20>`_)
+* Contributors: Alejandro Hernández Cordero
+
 0.12.0 (2026-05-05)
 -------------------
 
